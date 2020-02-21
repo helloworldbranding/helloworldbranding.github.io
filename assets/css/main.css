@@ -316,4 +316,50 @@ td.hex-color {
 }
 
 @media (max-width: 980px) {
+  h1{
+    font-size: 75px;
+    line-height: 57px;
+  }
+  h2{
+    font-size: 30px;
+  }
+  .content{
+    max-width: 100%;
+    transform: none;
+    -webkit-transform: none;
+    top: 22%;
+    left: 0;
+    padding: 20px;
+    display: block;
+    height: auto;
+  }
+  .grid{
+    max-width: 100%;
+  }
+  .grid-sm{
+    max-width: 100%;
+  }
+  .grid-md{
+    max-width: 100%;
+  }
+  section{
+    padding: 40px 20px;
+  }
+  .logo-display{
+    width: 100%;;
+  }
+  .big-text-footer{
+    font-size: 40px;
+    line-height: 48px;
+  }
+  .sub-des{
+    font-size: 16px;
+    line-height: 25px;
+  }
+  .object{
+    padding-bottom: 40px;
+  }
+  .logo-display{
+    height: 300px;
+  }
 }
