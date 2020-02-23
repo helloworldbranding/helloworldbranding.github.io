@@ -362,4 +362,7 @@ td.hex-color {
   .logo-display{
     height: 300px;
   }
+  .contrast .col-50{
+    width: 100%;
+  }
 }
