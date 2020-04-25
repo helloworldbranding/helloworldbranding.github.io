@@ -10,7 +10,10 @@
     </title>
     <link rel="stylesheet" href="assets/css/common.css" />
     <link rel="stylesheet" href="assets/css/home.css" />
+    <link rel="stylesheet" href="assets/css/work.css" />
     <link rel="stylesheet" href="assets/css/animate.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/card.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/pattern.css" />
     <link rel="stylesheet" href="assets/css/icons.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700&display=swap"
@@ -31,7 +34,7 @@
     <meta property="og:site_name" content="YelowHouse" />
     <meta
       property="og:image"
-      content="https://helloworldbranding.github.io/yelowhouse/assets/images/share.jpg"
+      content="http://baijus.com/repyute/assets/images/share.jpg"
     />
     <meta
       property="og:description"
@@ -48,8 +51,8 @@
       sizes="16x16"
     />
   </head>
-  <body>
-    <div class="home-wrapper">
+  <body class="blue-light">
+    <div class="work-wrapper">
       <div id="circularMenu" class="circular-menu">
         <a
           class="floating-btn"
@@ -65,62 +68,58 @@
         </menu>
       </div>
       <div class="grid">
-        <div class="logo-container">
-          <img
-            src="./assets/images/yelowhouse-logo.png"
-            alt="Yellow House Logo"
-            title="YelowHouse"
-          />
-          <div class="covid-link">
-            <a href="covid.html" target="_blank">
-              <img src="./assets/images/stay-icon.png" alt="">
-            </a>
-          </div>
+        <div class="logo-container" style="text-align: center;">
+          <a href="index.html">
+            <img
+              src="./assets/images/yelowhouse-logo.png"
+              alt="Yellow House Logo"
+              title="YelowHouse"
+            />
+          </a>
         </div>
-        <div class="home-content">
-          <h1 class="strock-text">
-            Let Us Guide <br />
-            Your Space
-          </h1>
-          <p>
-            We are passionate about creating perfect, inspiring spaces that
-            <br />
-            foster growth and wellbeing.
-          </p>
-          <div class="home-work">
-            <h6>Our Works</h6>
-            <div class="home-work-thumb">
-              <div class="home-thumb-item">
-                <a href="works.html">
-                  <img src="./assets/images/home-work-img1.png" alt="" />
-                </a>
-              </div>
-              <div class="home-thumb-item">
-                <a href="works.html">
-                  <img src="./assets/images/home-work-img2.png" alt="" />
-                </a>
-              </div>
-              <a href="works.html" class="home-thumb-more">
-                <div class="more-text">
-                  Explore
-                </div>
-              </a>
+        <h1 class="common-h1 strock-text" style="text-align: center;">
+          Stay Home <br />
+          Stay Safes
+        </h1>
+      </div>
+
+      <!-- demo -->
+      <div class="grid">
+        <div class="content covid">
+          <div
+            class="elfsight-app-ce9e4f16-8616-4917-b300-2b3d22707645 covid19"
+          ></div>
+          <div class="info-wrapper-covid">
+            <div class="more-info">
+              <h5>HOW IT SPREADS</h5>
+              <img src="./assets/images/covid1.png" alt="" />
             </div>
+            <div class="more-info" style="padding-top: 0;">
+              <h5>PREVENTION</h5>
+              <img src="./assets/images/covid2.png" alt="" />
+            </div>
+          </div>
+          <div class="more-info">
+            <img src="./assets/images/covid3.png" alt="" />
           </div>
         </div>
       </div>
+      <!-- demo -->
     </div>
+
     <div class="footer-nav-wrapper animated fadeInUp">
       <div class="grid">
         <ul class="footer-nav">
-          <li class="active">
-            <span class="icon icon-home"></span>
-            <span class="text">Home</span>
+          <li>
+            <a href="index.html">
+              <span class="icon icon-home"></span>
+              <span class="text">Home</span>
+            </a>
           </li>
           <li>
-            <a href="works.html">
-              <span class="icon icon-layers"></span>
-              <span class="text">Our Works</span>
+            <a href="about.html">
+              <span class="icon icon-users"></span>
+              <span class="text">About</span>
             </a>
           </li>
           <li>
@@ -131,16 +130,14 @@
           </li>
           <li>
             <a href="contact.html">
-              <span
-                class="icon 
-              icon-mail"
-              ></span>
+              <span class="icon icon-mail"></span>
               <span class="text">Contact</span>
             </a>
           </li>
         </ul>
       </div>
     </div>
-    <script src="/assets/js/jquery-3.0.0.min.js"></script>
+    <!-- JS -->
+    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
   </body>
 </html>

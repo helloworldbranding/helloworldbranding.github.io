@@ -9,9 +9,19 @@
 }
 .logo-container {
   padding-top: 60px;
+  position: relative;
 }
 .logo-container img {
   width: 131px;
+}
+.covid-link{
+ float: right;
+}
+.covid-link a{
+  display: inline-block;
+}
+.covid-link a img{
+  width: 100px;
 }
 .home-content {
   display: inline-block;
@@ -90,6 +100,7 @@ a.home-thumb-more:hover {
   right: 0;
   bottom: 0;
   border-top: 1px solid #eeeeee;
+  z-index: 10;
 }
 ul.footer-nav {
   width: 800px;
@@ -183,6 +194,21 @@ ul.footer-nav li.active a {
 
 .circular-menu{
   display: none;
+}
+
+.covid19 a{
+  display: none !important;
+}
+.covid{
+  text-align: center;
+}
+.info-wrapper-covid{
+  background-color: #e7fffc;
+  margin-top: 50px;
+  padding: 20px;
+}
+.covid .more-info{
+  padding: 50px 0;
 }
 
 @media (max-width: 980px) {
