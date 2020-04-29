@@ -41,7 +41,8 @@
 }
 
 .image-section {
-  padding-bottom: 40px;
+  margin-bottom: 40px;
+  position: relative;
 }
 .image-section .only-img {
   padding-bottom: 10px;
@@ -67,11 +68,48 @@
   height: 100%;
 }
 
+.after-text {
+  width: 100%;
+  padding: 30px;
+  padding-left: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  color: white;
+}
+.after-text h2{
+  font-family: 'Museo Sans Rounded 1000';
+}
+.after-text ul li{
+  list-style: none;
+  position: relative;
+  padding-left: 25px;
+}
+.after-text ul li::before{
+  content: '•';
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.after-banner{
+  height: 550px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
 @media (max-width: 980px) {
   .card {
     width: 100%;
   }
   .common-h1 {
     padding-top: 30px;
+  }
+  .after-text {
+    padding-left: 30px;
   }
 }
