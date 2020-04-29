@@ -112,4 +112,7 @@
   .after-text {
     padding-left: 30px;
   }
+  .after-banner{
+    margin-bottom: 20px !important;
+  }
 }
