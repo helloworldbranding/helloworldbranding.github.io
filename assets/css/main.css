@@ -315,6 +315,20 @@ td.hex-color {
   height: 100vh;
 }
 
+
+.search-widget{
+  width: 1000px;
+  margin: auto;
+}
+.search-banner{
+  background-color: black;
+  padding: 100px 0;
+}
+.search-banner input{
+  width: 80%;
+  margin: auto;
+}
+
 @media (max-width: 980px) {
   h1{
     font-size: 75px;

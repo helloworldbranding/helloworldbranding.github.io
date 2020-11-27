@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      HelloWorld Branding
+    </title>
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <link
+      href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="description" content="HelloWorld Branding - The core concept of our identity is that we bring people together." />
+
+    <meta property="og:title" content="HelloWorld" />
+    <meta property="og:url" content="http://wwww.thehelloworld.com/" />
+    <meta property="og:image" content="" />
+    <meta property="og:site_name" content="HelloWorld - The core concept of our identity is that we bring people together." />
+    <meta
+      property="og:image"
+      content="https://helloworldbranding.github.io/assets/images/share.jpg"
+    />
+    <meta property="og:description" content="This guide is designed for designers, managers, advertising agencies and all those who cooperate with HelloWorld. Use these rules, you are guaranteed to correctly interpret our visual style." />
+    <meta name="twitter:title" content="HelloWorld - The core concept of our identity is that we bring people together." />
+    <link
+      rel="icon"
+      type="image/png"
+      href="assets/images/favicon.png"
+      sizes="16x16"
+    />
+  </head>
+  <body>
+    <div class="search-banner">
+       <div class="grid">
+            <input id="search" type="text" class="form-control"  placeholder="Search by keywords">
+       </div>
+    </div>
+    <div class="search-widget">
+        <div class="grid">
+            <table class="table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Designation</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Joining</th>
+                </tr>
+            </thead>
+                <tbody id="table" data-sheetdb-url="https://sheetdb.io/api/v1/8uv1f0seboaya">
+                <tr>
+                    <td>{{name}}</td>
+                    <td>{{designation}}</td>
+                    <td>{{email}}</td>
+                    <td>{{phone}}</td>
+                    <td>{{joining}}</td>
+                </tr>
+            </tbody>
+            </table>
+        </div>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+          <script src="https://sheetdb.io/handlebars.js"></script>
+          <script>
+             $("#search").on("keyup", function() {
+                var value = $(this).val().toLowerCase();
+                $("#table tr").filter(function() {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+            });
+          </script>
+    </div>
+</div>
+  </body>
+</html>
